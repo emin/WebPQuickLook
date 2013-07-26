@@ -49,7 +49,7 @@ Quick Look Plugin for WebP Files
 		mv WebpQuickLook.qlgenerator /Library/QuickLook/
 		qlmanage -r
 
-  This probably require your administration, if you are not administrator you
+  This probably require an administrator account, if you are not administrator you
   can't install it.
 
 
