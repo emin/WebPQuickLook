@@ -41,9 +41,8 @@ Quick Look Plugin for WebP Files
 ###The other users can't use it. What can I do?
 
   You can do it same operations by logining their account. But if you want
-  to install for all users, that's simple and similar the above commands. I
-  have to delete one character (~) from above commands. As most of you quickly
-  figured out, 
+  to install for all users, that's simple and similar the above commands. 
+  As most of you quickly figured out, 
 
 	curl  https://raw.github.com/emin/WebPQuickLook/master/WebpQuickLook.tar.gz | tar -xvz
 	sudo mkdir -p /Library/QuickLook/
