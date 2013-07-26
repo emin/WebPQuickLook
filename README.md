@@ -14,6 +14,12 @@ Quick Look Plugin for WebP Files
   doesn't recognize the .webp files. This plugin will give you an ability to
   see previews and thumbnails of WebP images.
 
+###How does it look like?
+
+  Just like a ordinary image file:
+  
+  ![quicklook webp](https://raw.github.com/emin/WebPQuickLook/master/screenshot.png 'WebP')
+
 
 ###How can I install it?
   
