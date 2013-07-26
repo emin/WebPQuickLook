@@ -33,6 +33,7 @@ Quick Look Plugin for WebP Files
 	mkdir -p ~/Library/QuickLook/
 	mv WebpQuickLook.qlgenerator ~/Library/QuickLook/
 	qlmanage -r
+
   
   That's it. You just installed it. Enjoy your WebP files just like ordinary
   image files.
@@ -48,6 +49,7 @@ Quick Look Plugin for WebP Files
 	sudo mkdir -p /Library/QuickLook/
 	sudo mv WebpQuickLook.qlgenerator /Library/QuickLook/
 	qlmanage -r
+
 
   This requires an administrator account, if you are not administrator you
   can't install it.
