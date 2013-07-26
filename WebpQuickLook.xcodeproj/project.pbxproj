@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		237E363517A257280033EC8D /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237E363417A257280033EC8D /* QuickLook.framework */; };
+		237E363717A257280033EC8D /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237E363617A257280033EC8D /* ApplicationServices.framework */; };
+		237E363917A257280033EC8D /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237E363817A257280033EC8D /* CoreServices.framework */; };
+		237E363B17A257280033EC8D /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237E363A17A257280033EC8D /* CoreFoundation.framework */; };
+		237E364117A257280033EC8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 237E363F17A257280033EC8D /* InfoPlist.strings */; };
+		237E364317A257280033EC8D /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 237E364217A257280033EC8D /* GenerateThumbnailForURL.c */; };
+		237E364517A257280033EC8D /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 237E364417A257280033EC8D /* GeneratePreviewForURL.c */; };
+		237E364717A257280033EC8D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 237E364617A257280033EC8D /* main.c */; };
+		237E364F17A25A9B0033EC8D /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 237E364E17A25A9B0033EC8D /* libwebp.a */; };
+		237E365717A25B5E0033EC8D /* decode.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E365117A25B5E0033EC8D /* decode.h */; };
+		237E365817A25B5E0033EC8D /* demux.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E365217A25B5E0033EC8D /* demux.h */; };
+		237E365917A25B5E0033EC8D /* encode.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E365317A25B5E0033EC8D /* encode.h */; };
+		237E365A17A25B5E0033EC8D /* mux.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E365417A25B5E0033EC8D /* mux.h */; };
+		237E365B17A25B5E0033EC8D /* mux_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E365517A25B5E0033EC8D /* mux_types.h */; };
+		237E365C17A25B5E0033EC8D /* types.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E365617A25B5E0033EC8D /* types.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		237E363117A257280033EC8D /* WebpQuickLook.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebpQuickLook.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		237E363417A257280033EC8D /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		237E363617A257280033EC8D /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		237E363817A257280033EC8D /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		237E363A17A257280033EC8D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		237E363E17A257280033EC8D /* WebpQuickLook-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WebpQuickLook-Info.plist"; sourceTree = "<group>"; };
+		237E364017A257280033EC8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		237E364217A257280033EC8D /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
+		237E364417A257280033EC8D /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		237E364617A257280033EC8D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		237E364817A257280033EC8D /* WebpQuickLook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebpQuickLook-Prefix.pch"; sourceTree = "<group>"; };
+		237E364E17A25A9B0033EC8D /* libwebp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebp.a; sourceTree = "<group>"; };
+		237E365117A25B5E0033EC8D /* decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decode.h; sourceTree = "<group>"; };
+		237E365217A25B5E0033EC8D /* demux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demux.h; sourceTree = "<group>"; };
+		237E365317A25B5E0033EC8D /* encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encode.h; sourceTree = "<group>"; };
+		237E365417A25B5E0033EC8D /* mux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mux.h; sourceTree = "<group>"; };
+		237E365517A25B5E0033EC8D /* mux_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mux_types.h; sourceTree = "<group>"; };
+		237E365617A25B5E0033EC8D /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		237E365D17A28C310033EC8D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		237E362C17A257280033EC8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				237E363517A257280033EC8D /* QuickLook.framework in Frameworks */,
+				237E363717A257280033EC8D /* ApplicationServices.framework in Frameworks */,
+				237E363917A257280033EC8D /* CoreServices.framework in Frameworks */,
+				237E363B17A257280033EC8D /* CoreFoundation.framework in Frameworks */,
+				237E364F17A25A9B0033EC8D /* libwebp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		237E362617A257280033EC8D = {
+			isa = PBXGroup;
+			children = (
+				237E365D17A28C310033EC8D /* Cocoa.framework */,
+				237E363C17A257280033EC8D /* WebpQuickLook */,
+				237E363317A257280033EC8D /* Frameworks */,
+				237E363217A257280033EC8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		237E363217A257280033EC8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				237E363117A257280033EC8D /* WebpQuickLook.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		237E363317A257280033EC8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				237E363417A257280033EC8D /* QuickLook.framework */,
+				237E363617A257280033EC8D /* ApplicationServices.framework */,
+				237E363817A257280033EC8D /* CoreServices.framework */,
+				237E363A17A257280033EC8D /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		237E363C17A257280033EC8D /* WebpQuickLook */ = {
+			isa = PBXGroup;
+			children = (
+				237E365017A25B5E0033EC8D /* webp */,
+				237E364217A257280033EC8D /* GenerateThumbnailForURL.c */,
+				237E364417A257280033EC8D /* GeneratePreviewForURL.c */,
+				237E364617A257280033EC8D /* main.c */,
+				237E363D17A257280033EC8D /* Supporting Files */,
+			);
+			path = WebpQuickLook;
+			sourceTree = "<group>";
+		};
+		237E363D17A257280033EC8D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				237E364E17A25A9B0033EC8D /* libwebp.a */,
+				237E363E17A257280033EC8D /* WebpQuickLook-Info.plist */,
+				237E363F17A257280033EC8D /* InfoPlist.strings */,
+				237E364817A257280033EC8D /* WebpQuickLook-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		237E365017A25B5E0033EC8D /* webp */ = {
+			isa = PBXGroup;
+			children = (
+				237E365117A25B5E0033EC8D /* decode.h */,
+				237E365217A25B5E0033EC8D /* demux.h */,
+				237E365317A25B5E0033EC8D /* encode.h */,
+				237E365417A25B5E0033EC8D /* mux.h */,
+				237E365517A25B5E0033EC8D /* mux_types.h */,
+				237E365617A25B5E0033EC8D /* types.h */,
+			);
+			path = webp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		237E362D17A257280033EC8D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				237E365717A25B5E0033EC8D /* decode.h in Headers */,
+				237E365817A25B5E0033EC8D /* demux.h in Headers */,
+				237E365917A25B5E0033EC8D /* encode.h in Headers */,
+				237E365A17A25B5E0033EC8D /* mux.h in Headers */,
+				237E365B17A25B5E0033EC8D /* mux_types.h in Headers */,
+				237E365C17A25B5E0033EC8D /* types.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		237E363017A257280033EC8D /* WebpQuickLook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 237E364B17A257280033EC8D /* Build configuration list for PBXNativeTarget "WebpQuickLook" */;
+			buildPhases = (
+				237E362B17A257280033EC8D /* Sources */,
+				237E362C17A257280033EC8D /* Frameworks */,
+				237E362D17A257280033EC8D /* Headers */,
+				237E362E17A257280033EC8D /* Resources */,
+				237E362F17A257280033EC8D /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebpQuickLook;
+			productName = WebpQuickLook;
+			productReference = 237E363117A257280033EC8D /* WebpQuickLook.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		237E362717A257280033EC8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Emin Kura";
+			};
+			buildConfigurationList = 237E362A17A257280033EC8D /* Build configuration list for PBXProject "WebpQuickLook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 237E362617A257280033EC8D;
+			productRefGroup = 237E363217A257280033EC8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				237E363017A257280033EC8D /* WebpQuickLook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		237E362E17A257280033EC8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				237E364117A257280033EC8D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		237E362F17A257280033EC8D /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		237E362B17A257280033EC8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				237E364317A257280033EC8D /* GenerateThumbnailForURL.c in Sources */,
+				237E364517A257280033EC8D /* GeneratePreviewForURL.c in Sources */,
+				237E364717A257280033EC8D /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		237E363F17A257280033EC8D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				237E364017A257280033EC8D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		237E364917A257280033EC8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		237E364A17A257280033EC8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		237E364C17A257280033EC8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WebpQuickLook/WebpQuickLook-Prefix.pch";
+				INFOPLIST_FILE = "WebpQuickLook/WebpQuickLook-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/WebpQuickLook\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		237E364D17A257280033EC8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WebpQuickLook/WebpQuickLook-Prefix.pch";
+				INFOPLIST_FILE = "WebpQuickLook/WebpQuickLook-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/WebpQuickLook\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		237E362A17A257280033EC8D /* Build configuration list for PBXProject "WebpQuickLook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				237E364917A257280033EC8D /* Debug */,
+				237E364A17A257280033EC8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		237E364B17A257280033EC8D /* Build configuration list for PBXNativeTarget "WebpQuickLook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				237E364C17A257280033EC8D /* Debug */,
+				237E364D17A257280033EC8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 237E362717A257280033EC8D /* Project object */;
+}
