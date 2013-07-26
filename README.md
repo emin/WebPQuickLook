@@ -23,7 +23,10 @@ Quick Look Plugin for WebP Files
   Open your terminal app (or whatever you use) and copy paste the below
   commands:
 
-  		ldsfs
+  		curl  https://raw.github.com/emin/WebPQuickLook/master/WebpQuickLook.tar.gz | tar -xvz
+		mkdir -p ~/Library/QuickLook/
+		mv WebpQuickLook.qlgenerator ~/Library/QuickLook/
+		qlmanage -r
 
 
 
