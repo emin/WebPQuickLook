@@ -29,10 +29,10 @@ Quick Look Plugin for WebP Files
   Open your terminal app (or whatever you use) and copy paste the below
   commands:
 
-  		curl  https://raw.github.com/emin/WebPQuickLook/master/WebpQuickLook.tar.gz | tar -xvz
-		mkdir -p ~/Library/QuickLook/
-		mv WebpQuickLook.qlgenerator ~/Library/QuickLook/
-		qlmanage -r
+	curl  https://raw.github.com/emin/WebPQuickLook/master/WebpQuickLook.tar.gz | tar -xvz
+	mkdir -p ~/Library/QuickLook/
+	mv WebpQuickLook.qlgenerator ~/Library/QuickLook/
+	qlmanage -r
   
   That's it. You just installed it. Enjoy your WebP files just like ordinary
   image files.
@@ -44,10 +44,10 @@ Quick Look Plugin for WebP Files
   have to delete one character (~) from above commands. As most of you quickly
   figured out, 
 
-  		curl  https://raw.github.com/emin/WebPQuickLook/master/WebpQuickLook.tar.gz | tar -xvz
-		mkdir -p /Library/QuickLook/
-		mv WebpQuickLook.qlgenerator /Library/QuickLook/
-		qlmanage -r
+	curl  https://raw.github.com/emin/WebPQuickLook/master/WebpQuickLook.tar.gz | tar -xvz
+	mkdir -p /Library/QuickLook/
+	mv WebpQuickLook.qlgenerator /Library/QuickLook/
+	qlmanage -r
 
   This probably require an administrator account, if you are not administrator you
   can't install it.
