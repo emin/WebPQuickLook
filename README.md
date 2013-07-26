@@ -16,7 +16,7 @@ Quick Look Plugin for WebP Files
 
 ###How does it look like?
 
-  Just like a ordinary image file:
+  Just like an ordinary image file:
   
   ![quicklook webp](https://raw.github.com/emin/WebPQuickLook/master/screenshot.png 'WebP')
 
