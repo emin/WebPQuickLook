@@ -45,11 +45,11 @@ Quick Look Plugin for WebP Files
   figured out, 
 
 	curl  https://raw.github.com/emin/WebPQuickLook/master/WebpQuickLook.tar.gz | tar -xvz
-	mkdir -p /Library/QuickLook/
-	mv WebpQuickLook.qlgenerator /Library/QuickLook/
+	sudo mkdir -p /Library/QuickLook/
+	sudo mv WebpQuickLook.qlgenerator /Library/QuickLook/
 	qlmanage -r
 
-  This probably require an administrator account, if you are not administrator you
+  This requires an administrator account, if you are not administrator you
   can't install it.
 
 
