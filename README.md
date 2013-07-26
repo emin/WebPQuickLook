@@ -27,6 +27,23 @@ Quick Look Plugin for WebP Files
 		mkdir -p ~/Library/QuickLook/
 		mv WebpQuickLook.qlgenerator ~/Library/QuickLook/
 		qlmanage -r
+  
+  That's it. You just installed it. Enjoy your WebP files just like ordinary
+  image files.
 
+###The other users can't use it. What can I do?
+
+  You can do it same operations while logining their account. But if you want
+  to install for all users, that's simple and similar the above commands. I
+  have to delete one character (~) from above commands. As most of you quickly
+  figured out, 
+
+  		curl  https://raw.github.com/emin/WebPQuickLook/master/WebpQuickLook.tar.gz | tar -xvz
+		mkdir -p /Library/QuickLook/
+		mv WebpQuickLook.qlgenerator /Library/QuickLook/
+		qlmanage -r
+
+  This probably require your administration, if you are not administrator you
+  can't install it. 
 
 
