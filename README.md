@@ -10,7 +10,7 @@ Quick Look Plugin for WebP Files
   for the thumbnail creation.
 
   Most people know this mechanism. By default, OS X doesn't provide preview and
-  thumbnail for all file types. WebP is Google's new image format and OS X
+  thumbnail for all file types. [WebP](https://developers.google.com/speed/webp/) is Google's new image format and OS X
   doesn't recognize the .webp files. This plugin will give you an ability to
   see previews and thumbnails of WebP images.
 
