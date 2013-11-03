@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>12E55</string>
+	<string>13A603</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleDocumentTypes</key>
@@ -48,19 +48,19 @@
 	<key>CFPlugInUnloadFunction</key>
 	<string></string>
 	<key>DTCompiler</key>
-	<string></string>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>4H1503</string>
+	<string>5A2053</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>12D75</string>
+	<string>13A595</string>
 	<key>DTSDKName</key>
-	<string>macosx10.8</string>
+	<string>macosx10.9</string>
 	<key>DTXcode</key>
-	<string>0463</string>
+	<string>0501</string>
 	<key>DTXcodeBuild</key>
-	<string>4H1503</string>
+	<string>5A2053</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2013 Emin Kura. All rights reserved.</string>
 	<key>QLNeedsToBeRunInMainThread</key>

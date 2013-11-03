@@ -43,18 +43,38 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
         
         fclose(file);
         
+        WebPBitstreamFeatures features;
+        
+        WebPGetFeatures(&data[0], size, &features);
+        
+        
         int width = 0;
         int height = 0;
         
-        uint8_t *rgbData = WebPDecodeRGB(&data[0], size, &width, &height);
+        uint8_t *rgbData = NULL;
+        
+        int samples = 3;
+        CGBitmapInfo bitmapInfo = kCGBitmapByteOrderDefault;
+        
+
+            
+        if( features.has_alpha ){
+            rgbData = WebPDecodeRGBA(&data[0], size, &width, &height);
+            samples = 4;
+            bitmapInfo = kCGImageAlphaLast;
+        }else{
+            rgbData = WebPDecodeRGB(&data[0], size, &width, &height);
+        }
+        
+        
         
         CGSize imageSize = CGSizeMake(width, height);
         
         CGContextRef ctx = QLPreviewRequestCreateContext(preview, imageSize, true, options);
         
-        CGDataProviderRef provider = CGDataProviderCreateWithData(NULL, rgbData, width*height*3, NULL);
+        CGDataProviderRef provider = CGDataProviderCreateWithData(NULL, rgbData, width*height*samples, NULL);
         
-        CGImageRef image =  CGImageCreate(width, height, 8, 24, width * 3, CGColorSpaceCreateDeviceRGB(), kCGImageAlphaNoneSkipFirst, provider, NULL, false, kCGRenderingIntentDefault);
+        CGImageRef image =  CGImageCreate(width, height, 8, 8 * samples, width * samples, CGColorSpaceCreateDeviceRGB(), bitmapInfo, provider, NULL, false, kCGRenderingIntentDefault);
 
         
         CGContextDrawImage(ctx, CGRectMake(0, 0, width, height), image);
