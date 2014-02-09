@@ -2,6 +2,7 @@
 #include <CoreServices/CoreServices.h>
 #include <QuickLook/QuickLook.h>
 #include "webp/decode.h"
+#include "webp/demux.h"
 
 OSStatus GenerateThumbnailForURL(void *thisInterface, QLThumbnailRequestRef thumbnail, CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options, CGSize maxSize);
 void CancelThumbnailGeneration(void *thisInterface, QLThumbnailRequestRef thumbnail);
@@ -42,6 +43,9 @@ OSStatus GenerateThumbnailForURL(void *thisInterface, QLThumbnailRequestRef thum
         
         fclose(file);
         
+        
+        WebPBitstreamFeatures features;
+        WebPGetFeatures(&data[0], size, &features);
 
         int width = (int)maxSize.width;
         int height = (int)maxSize.height;
@@ -60,7 +64,6 @@ OSStatus GenerateThumbnailForURL(void *thisInterface, QLThumbnailRequestRef thum
             height = (int)maxSize.height;
             width = (int)( height * image_w/image_h );
         }
-            
         
         // for scaled size decoding
         
@@ -72,7 +75,48 @@ OSStatus GenerateThumbnailForURL(void *thisInterface, QLThumbnailRequestRef thum
         config.options.scaled_height = height;
         
         config.output.colorspace = MODE_RGBA;
-        WebPDecode(&data[0], size, &config);
+        
+        
+        
+        
+        if ( features.has_animation ) {
+            
+            // it has animation we need to use demux
+            WebPData webpData;
+            webpData.bytes = data;
+            webpData.size = size;
+            
+            WebPDemuxer *demux = WebPDemux(&webpData);
+            
+            //            uint32_t width = WebPDemuxGetI(demux, WEBP_FF_CANVAS_WIDTH);
+            //            uint32_t height = WebPDemuxGetI(demux, WEBP_FF_CANVAS_HEIGHT);
+            //            // ... (Get information about the features present in the WebP file).
+            //            uint32_t flags = WebPDemuxGetI(demux, WEBP_FF_FORMAT_FLAGS);
+            
+            
+            // ... (Iterate over all frames).
+            WebPIterator iter;
+            if (WebPDemuxGetFrame(demux, 1, &iter)) {
+                
+                do {
+                    
+                    WebPDecode(iter.fragment.bytes, size, &config);
+                    
+                    // for now break it, it only show first frame
+                    break;
+                    
+                    // ... (Consume 'iter'; e.g. Decode 'iter.fragment' with WebPDecode(),
+                    // ... and get other frame properties like width, height, offsets etc.
+                    // ... see 'struct WebPIterator' below for more info).
+                } while (WebPDemuxNextFrame(&iter));
+                WebPDemuxReleaseIterator(&iter);
+            }
+            
+        }
+        else
+        {
+            WebPDecode(&data[0], size, &config);
+        }
         
         
         

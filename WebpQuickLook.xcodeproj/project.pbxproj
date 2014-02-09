@@ -15,13 +15,14 @@
 		237E364317A257280033EC8D /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 237E364217A257280033EC8D /* GenerateThumbnailForURL.c */; };
 		237E364517A257280033EC8D /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 237E364417A257280033EC8D /* GeneratePreviewForURL.c */; };
 		237E364717A257280033EC8D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 237E364617A257280033EC8D /* main.c */; };
-		237E364F17A25A9B0033EC8D /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 237E364E17A25A9B0033EC8D /* libwebp.a */; };
-		237E365717A25B5E0033EC8D /* decode.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E365117A25B5E0033EC8D /* decode.h */; };
-		237E365817A25B5E0033EC8D /* demux.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E365217A25B5E0033EC8D /* demux.h */; };
-		237E365917A25B5E0033EC8D /* encode.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E365317A25B5E0033EC8D /* encode.h */; };
-		237E365A17A25B5E0033EC8D /* mux.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E365417A25B5E0033EC8D /* mux.h */; };
-		237E365B17A25B5E0033EC8D /* mux_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E365517A25B5E0033EC8D /* mux_types.h */; };
-		237E365C17A25B5E0033EC8D /* types.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E365617A25B5E0033EC8D /* types.h */; };
+		23866DAD18A838C40009A7A8 /* decode.h in Headers */ = {isa = PBXBuildFile; fileRef = 23866DA718A838C40009A7A8 /* decode.h */; };
+		23866DAE18A838C40009A7A8 /* demux.h in Headers */ = {isa = PBXBuildFile; fileRef = 23866DA818A838C40009A7A8 /* demux.h */; };
+		23866DAF18A838C40009A7A8 /* encode.h in Headers */ = {isa = PBXBuildFile; fileRef = 23866DA918A838C40009A7A8 /* encode.h */; };
+		23866DB018A838C40009A7A8 /* mux.h in Headers */ = {isa = PBXBuildFile; fileRef = 23866DAA18A838C40009A7A8 /* mux.h */; };
+		23866DB118A838C40009A7A8 /* mux_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 23866DAB18A838C40009A7A8 /* mux_types.h */; };
+		23866DB218A838C40009A7A8 /* types.h in Headers */ = {isa = PBXBuildFile; fileRef = 23866DAC18A838C40009A7A8 /* types.h */; };
+		23866DB518A838D00009A7A8 /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23866DB318A838D00009A7A8 /* libwebp.a */; };
+		23866DB618A838D00009A7A8 /* libwebpdemux.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23866DB418A838D00009A7A8 /* libwebpdemux.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,14 +37,15 @@
 		237E364417A257280033EC8D /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
 		237E364617A257280033EC8D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		237E364817A257280033EC8D /* WebpQuickLook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebpQuickLook-Prefix.pch"; sourceTree = "<group>"; };
-		237E364E17A25A9B0033EC8D /* libwebp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebp.a; sourceTree = "<group>"; };
-		237E365117A25B5E0033EC8D /* decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decode.h; sourceTree = "<group>"; };
-		237E365217A25B5E0033EC8D /* demux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demux.h; sourceTree = "<group>"; };
-		237E365317A25B5E0033EC8D /* encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encode.h; sourceTree = "<group>"; };
-		237E365417A25B5E0033EC8D /* mux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mux.h; sourceTree = "<group>"; };
-		237E365517A25B5E0033EC8D /* mux_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mux_types.h; sourceTree = "<group>"; };
-		237E365617A25B5E0033EC8D /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
 		237E365D17A28C310033EC8D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		23866DA718A838C40009A7A8 /* decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decode.h; sourceTree = "<group>"; };
+		23866DA818A838C40009A7A8 /* demux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demux.h; sourceTree = "<group>"; };
+		23866DA918A838C40009A7A8 /* encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encode.h; sourceTree = "<group>"; };
+		23866DAA18A838C40009A7A8 /* mux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mux.h; sourceTree = "<group>"; };
+		23866DAB18A838C40009A7A8 /* mux_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mux_types.h; sourceTree = "<group>"; };
+		23866DAC18A838C40009A7A8 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		23866DB318A838D00009A7A8 /* libwebp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebp.a; sourceTree = "<group>"; };
+		23866DB418A838D00009A7A8 /* libwebpdemux.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebpdemux.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +54,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				237E363517A257280033EC8D /* QuickLook.framework in Frameworks */,
+				23866DB518A838D00009A7A8 /* libwebp.a in Frameworks */,
 				237E363717A257280033EC8D /* ApplicationServices.framework in Frameworks */,
+				23866DB618A838D00009A7A8 /* libwebpdemux.a in Frameworks */,
 				237E363917A257280033EC8D /* CoreServices.framework in Frameworks */,
 				237E363B17A257280033EC8D /* CoreFoundation.framework in Frameworks */,
-				237E364F17A25A9B0033EC8D /* libwebp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +97,9 @@
 		237E363C17A257280033EC8D /* WebpQuickLook */ = {
 			isa = PBXGroup;
 			children = (
-				237E365017A25B5E0033EC8D /* webp */,
+				23866DB318A838D00009A7A8 /* libwebp.a */,
+				23866DB418A838D00009A7A8 /* libwebpdemux.a */,
+				23866DA618A838C40009A7A8 /* webp */,
 				237E364217A257280033EC8D /* GenerateThumbnailForURL.c */,
 				237E364417A257280033EC8D /* GeneratePreviewForURL.c */,
 				237E364617A257280033EC8D /* main.c */,
@@ -106,7 +111,6 @@
 		237E363D17A257280033EC8D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				237E364E17A25A9B0033EC8D /* libwebp.a */,
 				237E363E17A257280033EC8D /* WebpQuickLook-Info.plist */,
 				237E363F17A257280033EC8D /* InfoPlist.strings */,
 				237E364817A257280033EC8D /* WebpQuickLook-Prefix.pch */,
@@ -114,15 +118,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		237E365017A25B5E0033EC8D /* webp */ = {
+		23866DA618A838C40009A7A8 /* webp */ = {
 			isa = PBXGroup;
 			children = (
-				237E365117A25B5E0033EC8D /* decode.h */,
-				237E365217A25B5E0033EC8D /* demux.h */,
-				237E365317A25B5E0033EC8D /* encode.h */,
-				237E365417A25B5E0033EC8D /* mux.h */,
-				237E365517A25B5E0033EC8D /* mux_types.h */,
-				237E365617A25B5E0033EC8D /* types.h */,
+				23866DA718A838C40009A7A8 /* decode.h */,
+				23866DA818A838C40009A7A8 /* demux.h */,
+				23866DA918A838C40009A7A8 /* encode.h */,
+				23866DAA18A838C40009A7A8 /* mux.h */,
+				23866DAB18A838C40009A7A8 /* mux_types.h */,
+				23866DAC18A838C40009A7A8 /* types.h */,
 			);
 			path = webp;
 			sourceTree = "<group>";
@@ -134,12 +138,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				237E365717A25B5E0033EC8D /* decode.h in Headers */,
-				237E365817A25B5E0033EC8D /* demux.h in Headers */,
-				237E365917A25B5E0033EC8D /* encode.h in Headers */,
-				237E365A17A25B5E0033EC8D /* mux.h in Headers */,
-				237E365B17A25B5E0033EC8D /* mux_types.h in Headers */,
-				237E365C17A25B5E0033EC8D /* types.h in Headers */,
+				23866DB218A838C40009A7A8 /* types.h in Headers */,
+				23866DAE18A838C40009A7A8 /* demux.h in Headers */,
+				23866DB018A838C40009A7A8 /* mux.h in Headers */,
+				23866DB118A838C40009A7A8 /* mux_types.h in Headers */,
+				23866DAD18A838C40009A7A8 /* decode.h in Headers */,
+				23866DAF18A838C40009A7A8 /* encode.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +310,8 @@
 				INSTALL_PATH = /Library/QuickLook;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/WebpQuickLook\"",
+					"\\\"$(SRCROOT)/WebpQuickLook\\\"",
+					/Users/emin/Desktop/WebPQuickLook/WebpQuickLook,
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -325,7 +330,8 @@
 				INSTALL_PATH = /Library/QuickLook;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/WebpQuickLook\"",
+					"\\\"$(SRCROOT)/WebpQuickLook\\\"",
+					/Users/emin/Desktop/WebPQuickLook/WebpQuickLook,
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";

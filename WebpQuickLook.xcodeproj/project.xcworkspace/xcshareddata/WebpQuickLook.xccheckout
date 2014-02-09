@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>5BC7E09B-77C0-4D46-8582-804ABCEEE10C</string>
+	<string>A0F5937C-CE11-46D0-85E6-65804267D499</string>
 	<key>IDESourceControlProjectName</key>
 	<string>WebpQuickLook</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>729A438D-C8DD-4F6B-B5B2-9F0219AB99F4</key>
-		<string>https://github.com/emin/WebPQuickLook.git</string>
+		<key>EE99BFB2-76CF-4AC6-BB75-506D5A9BABAA</key>
+		<string>https://github.com/emin/WebPQuickLook</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>WebpQuickLook.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>729A438D-C8DD-4F6B-B5B2-9F0219AB99F4</key>
+		<key>EE99BFB2-76CF-4AC6-BB75-506D5A9BABAA</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/emin/WebPQuickLook.git</string>
+	<string>https://github.com/emin/WebPQuickLook</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>729A438D-C8DD-4F6B-B5B2-9F0219AB99F4</string>
+	<string>EE99BFB2-76CF-4AC6-BB75-506D5A9BABAA</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>729A438D-C8DD-4F6B-B5B2-9F0219AB99F4</string>
+			<string>EE99BFB2-76CF-4AC6-BB75-506D5A9BABAA</string>
 			<key>IDESourceControlWCCName</key>
-			<string>WebpQuickLook</string>
+			<string>WebPQuickLook</string>
 		</dict>
 	</array>
 </dict>
