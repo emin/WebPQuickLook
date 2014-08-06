@@ -2,7 +2,7 @@ Quick Look Plugin for WebP Files
 ================================
 
 ###What is this?
-  
+
   Quick Look is a part of Mac OS X. It provides you a quick way
   to look at your content without open it in an application.
   In Finder, choose a file or folder and push the space button, then QuickLook
@@ -17,34 +17,34 @@ Quick Look Plugin for WebP Files
 ###How does it look like?
 
   Just like an ordinary image file:
-  
+
   ![quicklook webp](https://raw.github.com/emin/WebPQuickLook/master/screenshot.png 'WebP')
 
 
 ###How can I install it?
-  
+
   This is simple for those of you who are familiar with terminal
   (console).
 
   Open your terminal app (or whatever you use) and copy paste the below
   commands:
 
-	curl  https://raw.github.com/emin/WebPQuickLook/master/WebpQuickLook.tar.gz | tar -xvz
+	curl -L https://raw.github.com/emin/WebPQuickLook/master/WebpQuickLook.tar.gz | tar -xvz
 	mkdir -p ~/Library/QuickLook/
 	mv WebpQuickLook.qlgenerator ~/Library/QuickLook/
 	qlmanage -r
 
-  
+
   That's it. You just installed it. Enjoy your WebP files just like ordinary
   image files.
 
 ###The other users can't use it. What can I do?
 
   You can do it same operations by logining their account. But if you want
-  to install for all users, that's simple and similar the above commands. 
-  As most of you quickly figured out, 
+  to install for all users, that's simple and similar the above commands.
+  As most of you quickly figured out,
 
-	curl  https://raw.github.com/emin/WebPQuickLook/master/WebpQuickLook.tar.gz | tar -xvz
+	curl -L https://raw.github.com/emin/WebPQuickLook/master/WebpQuickLook.tar.gz | tar -xvz
 	sudo mkdir -p /Library/QuickLook/
 	sudo mv WebpQuickLook.qlgenerator /Library/QuickLook/
 	qlmanage -r
