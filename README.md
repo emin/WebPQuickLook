@@ -1,7 +1,7 @@
 Quick Look Plugin for WebP Files
 ================================
 
-###What is this?
+### What is this?
 
   Quick Look is a part of Mac OS X. It provides you a quick way
   to look at your content without open it in an application.
@@ -14,14 +14,14 @@ Quick Look Plugin for WebP Files
   doesn't recognize the .webp files. This plugin will give you an ability to
   see previews and thumbnails of WebP images.
 
-###How does it look like?
+### How does it look like?
 
   Just like an ordinary image file:
 
   ![quicklook webp](https://raw.github.com/emin/WebPQuickLook/master/screenshot.png 'WebP')
 
 
-###How can I install it?
+### How can I install it?
 
   This is simple for those of you who are familiar with terminal
   (console).
@@ -38,7 +38,7 @@ Quick Look Plugin for WebP Files
   That's it. You just installed it. Enjoy your WebP files just like ordinary
   image files.
 
-###The other users can't use it. What can I do?
+### The other users can't use it. What can I do?
 
   You can do it same operations by logining their account. But if you want
   to install for all users, that's simple and similar the above commands.
