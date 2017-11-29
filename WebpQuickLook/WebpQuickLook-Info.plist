@@ -2,29 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UTExportedTypeDeclarations</key>
-	<array>
-		<dict>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.data</string>
-				<string>public.image</string>
-			</array>
-			<key>UTTypeIdentifier</key>
-			<string>public.webp</string>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.mime-type</key>
-				<string>image/webp</string>
-				<key>public.filename-extension</key>
-				<array>
-					<string>webp</string>
-				</array>
-				<key>com.apple.ostype</key>
-				<string>JPEG</string>
-			</dict>
-		</dict>
-	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleDocumentTypes</key>
@@ -43,7 +20,7 @@
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>com.eminkura.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -80,5 +57,28 @@
 	<real>800</real>
 	<key>QLSupportsConcurrentRequests</key>
 	<false/>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data</string>
+				<string>public.image</string>
+			</array>
+			<key>UTTypeIdentifier</key>
+			<string>public.webp</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>com.apple.ostype</key>
+				<string>JPEG</string>
+				<key>public.filename-extension</key>
+				<array>
+					<string>webp</string>
+				</array>
+				<key>public.mime-type</key>
+				<string>image/webp</string>
+			</dict>
+		</dict>
+	</array>
 </dict>
 </plist>
