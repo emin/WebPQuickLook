@@ -27,12 +27,9 @@ Quick Look Plugin for WebP Files
   (console).
 
   Open your terminal app (or whatever you use) and copy paste the below
-  commands:
+  command:
 
-	curl -L https://raw.github.com/emin/WebPQuickLook/master/WebpQuickLook.tar.gz | tar -xvz
-	mkdir -p ~/Library/QuickLook/
-	mv WebpQuickLook.qlgenerator ~/Library/QuickLook/
-	qlmanage -r
+	curl -L https://raw.github.com/emin/WebPQuickLook/master/install.sh | sh
 
 
   That's it. You just installed it. Enjoy your WebP files just like ordinary
@@ -42,15 +39,12 @@ Quick Look Plugin for WebP Files
 
   You can do it same operations by logining their account. But if you want
   to install for all users, that's simple and similar the above commands.
-  As most of you quickly figured out,
+  Just use this installation script,
 
-	curl -L https://raw.github.com/emin/WebPQuickLook/master/WebpQuickLook.tar.gz | tar -xvz
-	sudo mkdir -p /Library/QuickLook/
-	sudo mv WebpQuickLook.qlgenerator /Library/QuickLook/
-	qlmanage -r
+    curl -L https://raw.github.com/emin/WebPQuickLook/master/install-all.sh | sh
 
 
   This requires an administrator account, if you are not administrator you
-  can't install it.
+  can't install it. It'll ask for password then you're done.
 
 

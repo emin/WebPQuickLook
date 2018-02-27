@@ -21,8 +21,8 @@
 		23866DB018A838C40009A7A8 /* mux.h in Headers */ = {isa = PBXBuildFile; fileRef = 23866DAA18A838C40009A7A8 /* mux.h */; };
 		23866DB118A838C40009A7A8 /* mux_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 23866DAB18A838C40009A7A8 /* mux_types.h */; };
 		23866DB218A838C40009A7A8 /* types.h in Headers */ = {isa = PBXBuildFile; fileRef = 23866DAC18A838C40009A7A8 /* types.h */; };
-		23866DB518A838D00009A7A8 /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23866DB318A838D00009A7A8 /* libwebp.a */; };
-		23866DB618A838D00009A7A8 /* libwebpdemux.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23866DB418A838D00009A7A8 /* libwebpdemux.a */; };
+		EF468D502046047400DCBA9A /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF468D4C2046046200DCBA9A /* libwebp.a */; };
+		EF468D512046047700DCBA9A /* libwebpdemux.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF468D4D2046046200DCBA9A /* libwebpdemux.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,8 +44,8 @@
 		23866DAA18A838C40009A7A8 /* mux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mux.h; sourceTree = "<group>"; };
 		23866DAB18A838C40009A7A8 /* mux_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mux_types.h; sourceTree = "<group>"; };
 		23866DAC18A838C40009A7A8 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
-		23866DB318A838D00009A7A8 /* libwebp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebp.a; sourceTree = "<group>"; };
-		23866DB418A838D00009A7A8 /* libwebpdemux.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebpdemux.a; sourceTree = "<group>"; };
+		EF468D4C2046046200DCBA9A /* libwebp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebp.a; sourceTree = "<group>"; };
+		EF468D4D2046046200DCBA9A /* libwebpdemux.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebpdemux.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +53,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF468D512046047700DCBA9A /* libwebpdemux.a in Frameworks */,
+				EF468D502046047400DCBA9A /* libwebp.a in Frameworks */,
 				237E363517A257280033EC8D /* QuickLook.framework in Frameworks */,
-				23866DB518A838D00009A7A8 /* libwebp.a in Frameworks */,
 				237E363717A257280033EC8D /* ApplicationServices.framework in Frameworks */,
-				23866DB618A838D00009A7A8 /* libwebpdemux.a in Frameworks */,
 				237E363917A257280033EC8D /* CoreServices.framework in Frameworks */,
 				237E363B17A257280033EC8D /* CoreFoundation.framework in Frameworks */,
 			);
@@ -97,8 +97,8 @@
 		237E363C17A257280033EC8D /* WebpQuickLook */ = {
 			isa = PBXGroup;
 			children = (
-				23866DB318A838D00009A7A8 /* libwebp.a */,
-				23866DB418A838D00009A7A8 /* libwebpdemux.a */,
+				EF468D4C2046046200DCBA9A /* libwebp.a */,
+				EF468D4D2046046200DCBA9A /* libwebpdemux.a */,
 				23866DA618A838C40009A7A8 /* webp */,
 				237E364217A257280033EC8D /* GenerateThumbnailForURL.c */,
 				237E364417A257280033EC8D /* GeneratePreviewForURL.c */,
@@ -337,6 +337,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/WebpQuickLook",
+					"$(PROJECT_DIR)/WebpQuickLook",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eminkura.${PRODUCT_NAME:rfc1034identifier}";
@@ -356,6 +357,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/WebpQuickLook",
+					"$(PROJECT_DIR)/WebpQuickLook",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eminkura.${PRODUCT_NAME:rfc1034identifier}";
