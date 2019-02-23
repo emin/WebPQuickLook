@@ -38,15 +38,15 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
         long int size = ftell(file);
         fseek(file, 0, SEEK_SET);
         
-        const uint8_t data[size];
+        uint8_t *data = malloc(size);
         
-        fread((void*)&data[0], sizeof(uint8_t), size, file);
+        fread(data, sizeof(uint8_t), size, file);
         
         fclose(file);
         
         WebPBitstreamFeatures features;
         
-        WebPGetFeatures(&data[0], size, &features);
+        WebPGetFeatures(data, size, &features);
         
         
         int width = 0;
@@ -106,11 +106,11 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
         
     
         if( features.has_alpha ){
-            rgbData = WebPDecodeRGBA(&data[0], size, &width, &height);
+            rgbData = WebPDecodeRGBA(data, size, &width, &height);
             samples = 4;
             bitmapInfo = kCGImageAlphaLast;
         }else{
-            rgbData = WebPDecodeRGB(&data[0], size, &width, &height);
+            rgbData = WebPDecodeRGB(data, size, &width, &height);
         }
         
     }

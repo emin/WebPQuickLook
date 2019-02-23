@@ -37,21 +37,20 @@ OSStatus GenerateThumbnailForURL(void *thisInterface, QLThumbnailRequestRef thum
         long int size = ftell(file);
         fseek(file, 0, SEEK_SET);
         
-        const uint8_t data[size];
+        uint8_t *data = malloc(size);
         
-        fread((void*)(&data[0]), sizeof(uint8_t), size, file);
+        fread(data, sizeof(uint8_t), size, file);
         
         fclose(file);
         
         
         WebPBitstreamFeatures features;
-        WebPGetFeatures(&data[0], size, &features);
-
+        WebPGetFeatures(data, size, &features);
         int width = (int)maxSize.width;
         int height = (int)maxSize.height;
         int image_w, image_h;
         
-        WebPGetInfo(&data[0], size, &image_w, &image_h);
+        WebPGetInfo(data, size, &image_w, &image_h);
         
         
         if( image_w > image_h )
@@ -115,7 +114,7 @@ OSStatus GenerateThumbnailForURL(void *thisInterface, QLThumbnailRequestRef thum
         }
         else
         {
-            WebPDecode(&data[0], size, &config);
+            WebPDecode(data, size, &config);
         }
         
         
@@ -139,9 +138,10 @@ OSStatus GenerateThumbnailForURL(void *thisInterface, QLThumbnailRequestRef thum
         CFRelease(ctx);
         
         WebPFreeDecBuffer(&config.output);
+        
+        free(data);
     }
     
-
     
     
     
