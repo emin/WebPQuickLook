@@ -38,7 +38,7 @@ Quick Look Plugin for WebP Files
 
   If you use [homebrew](https://brew.sh/) you can do:
   
-	brew cask install WebPQuickLook
+	brew install --cask WebPQuickLook
 
 ### The other users can't use it. What can I do?
 
