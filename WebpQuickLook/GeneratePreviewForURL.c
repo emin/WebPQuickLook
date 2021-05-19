@@ -20,17 +20,20 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
     // get posix path and convert it to C string then we can get data from file with simple C operation.
     // Sometimes CoreFoundation is pain in the ass. I don't want to use it to get byte data
 
-    CFStringRef path = CFURLCopyPath(url);
-    path = CFURLCreateStringByReplacingPercentEscapes(kCFAllocatorDefault, path, CFSTR(""));
+    CFStringRef rawPath = CFURLCopyPath(url);
+    CFStringRef path = CFURLCreateStringByReplacingPercentEscapes(kCFAllocatorDefault, rawPath, CFSTR(""));
+    CFRelease(rawPath);
     CFIndex length  = CFStringGetLength(path);
     CFIndex maxSize = CFStringGetMaximumSizeForEncoding(length, kCFStringEncodingUTF8);
     
     char* c_path = (char*)malloc(maxSize);
     CFStringGetCString(path, c_path, maxSize, kCFStringEncodingUTF8);
+    CFRelease(path);
     
     // let 's do the reading and decoding with libwebp
     
     FILE *file = fopen(c_path, "r");
+    free(c_path);
     
     if (file != NULL) {
         
@@ -121,10 +124,14 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
         
         CGDataProviderRef provider = CGDataProviderCreateWithData(NULL, rgbData, width*height*samples, NULL);
         
-        CGImageRef image =  CGImageCreate(width, height, 8, 8 * samples, width * samples, CGColorSpaceCreateDeviceRGB(), bitmapInfo, provider, NULL, false, kCGRenderingIntentDefault);
-
+        CGColorSpaceRef deviceRGBColorSpace = CGColorSpaceCreateDeviceRGB();
+        CGImageRef image =  CGImageCreate(width, height, 8, 8 * samples, width * samples, deviceRGBColorSpace, bitmapInfo, provider, NULL, false, kCGRenderingIntentDefault);
         
         CGContextDrawImage(ctx, CGRectMake(0, 0, width, height), image);
+        
+        CGDataProviderRelease(provider);
+        CGColorSpaceRelease(deviceRGBColorSpace);
+        CGImageRelease(image);
         
         CGContextFlush(ctx);
         
